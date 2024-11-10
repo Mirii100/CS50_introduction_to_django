@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="{%static 'new/styles.css'%}">
+</head>
+<body>
+    <nav>
+        <a href="#">home</a>
+        <!--pracising how to use urls directly -->
+        <a href="{% url 'tasks' %}"> contacts</a>
+        <a href="#">help</a>
+        <a href="#">services</a>
+    </nav>
+
+    <form action="{% url 'addtask' %}" method="post">
+        <!--this for allowing csrf token acceptance -->
+        {% csrf_token %}
+        <input type="text" name="tasks">
+        {{ form }}
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>

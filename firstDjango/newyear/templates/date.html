@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} date {% endblock %}
+    <!-- rendering django view iside a template -->{% block body%}
+    <h1> is it new year </h1>
+    {% if newyear%}
+
+    
+    <h1>YES</h1>
+    {% else %}
+    <H1>NO</H1>
+    {% endif%}
+{% endblock %}

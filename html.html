@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript lecture</title>
+</head>
+<body>
+    <form action="" name="mform" onsubmit="validateForm()">
+        <label for="">number 1:</label>
+        <input type="text" id="num1" name="fnum" >
+        <label for="">number 2:</label>
+        <input type="text"  id="num2" name="snum">
+        <label for="">solution:</label>
+        <input type="text"  id="soln" name="soln"  onsubmit="validateForm()">
+        <input type="submit" value="Submit">
+    </form>
+   
+    <script>
+//let num1=eval(prompt('enter the first number : '));
+//let num2=eval(prompt('enter the second number : '));
+//let soln=num1+num2;
+//let num3=eval(alert('solution is : '+soln));
+
+function validateForm() {
+    var x = eval(document.forms['mform']['fnum'].value);
+    let y=eval(document.forms['mform']['snum'].value);
+    if (x == null || x == ""||y == null || y == ""  ) {
+        alert("number  must be filled out");
+        return false;
+    }
+    else{
+
+        alert('sum is : '+(x+y));
+    }
+}
+
+
+function m(){
+    let n=document.forms['mform']['fnum'].value;
+    
+let y=document.forms['mform']['snum'].value;
+let z=document.forms['mform']['soln'].value;
+alert(x,y)
+}
+
+    </script>
+</body>
+</html>

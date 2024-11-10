@@ -1,0 +1,16 @@
+<!--using of extends  from base.html -->
+{% extends "base.html" %}
+
+{% block title %}
+    tasks
+{% endblock %}
+
+{% block body %}
+    <h3>Showing the list of tasks</h3>
+    <ul>
+        <!-- Plugging the list of tasks -->
+        {% for task in mtask %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+{% endblock body  %}

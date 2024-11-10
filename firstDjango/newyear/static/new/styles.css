@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(122, 84, 162);
+    color: white;
+
+}
+a{
+    text-decoration: none;
+background-color: gray;
+border-radius: 10px;
+
+    padding: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 5px;
+    text-align: center;
+    text-overflow: none;
+    color: aqua;
+}
+nav{
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    background-color: black;
+}
