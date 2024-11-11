@@ -1,0 +1,18 @@
+{% extends "hello/root.html" %}
+
+
+{% block title%}
+this is the title of the project 
+{%endblock %}
+
+{% block body %}
+hello let me test for the project <br>name:
+{{name}}
+<br>
+{% for x in mymembers %}
+<li>
+    <a href="details.html/{{x.id}}"></a>
+    {{x.firstName}} {{x.lastName}}
+</li>
+{% endfor %}
+{% endblock %}

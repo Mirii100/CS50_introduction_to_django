@@ -1,16 +1,14 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'mineStyles/index.css'%}">
-    <title>Document</title>
+    <title>{% block title%}{% endblock%}</title>
+    <link rel="stylesheet" href="{% static 'styles/index.css'%}">
 </head>
 <body>
-    greeting page
-    //using  double curl braces  to use in django
-    hello,{{name}}
+    {%  block body %}
+    {%   endblock %}
 </body>
 </html>

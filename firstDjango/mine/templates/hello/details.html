@@ -1,0 +1,19 @@
+{% extends "hello/root.html" %}
+
+
+{% block title%}
+details of the projects 
+{%endblock %}
+
+{% block body %}
+
+{{name}}
+<br><h1>
+{{mymember.firstName}}
+{{mymember.lastName}}
+</h1>
+<p>phoneNumber{{mymembers.phoneNumber}}</p>
+<p>email : {{mymember.email}}</p>
+<p>back to <a href="/mine">members </a></p>
+
+{% endblock %}

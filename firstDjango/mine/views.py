@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Member
 # importing httpp response for django
 from  django.http import HttpResponse
 # Create your views here.
@@ -23,4 +24,17 @@ def helloThere(request,name):
 
 def ourName(request,name):
      return render(request,"hello/h.html",{"name":name.upper()})
+
+
+def members(request):
+    name="Alex"
+    mymembers=Member.objects.all().values()
+    return render(request,"hello/ww3.html",{"name":name,
+                                            "myMembers ":mymembers
+    })
+
+def detail(request,id):
+    mymember=Member.objects.get(id=id)
+    return render(request,'hello/details.html',{"mymember": mymember}
+           )
     
