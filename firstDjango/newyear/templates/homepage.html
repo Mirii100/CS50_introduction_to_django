@@ -16,7 +16,7 @@
         <a href="#">services</a>
     </nav>
 
-    <form action="{% url 'addtask' %}" method="post">
+    <form action="{% url 'tasks' %}" method="post">
         <!--this for allowing csrf token acceptance -->
         {% csrf_token %}
         <input type="text" name="tasks">

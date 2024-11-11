@@ -11,6 +11,17 @@
         <!-- Plugging the list of tasks -->
         {% for task in mtask %}
             <li>{{ task }}</li>
+{{addData}}
+            {% empty %}
         {% endfor %}
+        <li>No task yet have been created </li>
+
     </ul>
+    <form action="{% url 'tasks' %}" method="post">
+        <!--this for allowing csrf token acceptance -->
+        {% csrf_token %}
+        <input type="text" name="tasks">
+        {{ form }}
+        <input type="button" value="submit">
+    </form>
 {% endblock body  %}
