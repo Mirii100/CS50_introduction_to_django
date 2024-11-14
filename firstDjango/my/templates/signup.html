@@ -1,0 +1,33 @@
+{% extends 'appRoot.html' %}
+
+{% block title %} Navigation page {% endblock %}
+
+{% block body %}
+
+<nav>
+    <a href="{% url 'login'%}">homepage</a>
+    <a href="#">contact</a>
+    <a href="#">about</a>
+    <a href="#">our services</a>
+    <a href="#">help</a>
+</nav>
+<hr>
+<div class="container"><div class="inner-container">
+    <fieldset>
+        <h1>SIGN UP</h1>
+        <form action="">
+            <label for="firstname">FirstName:</label><br>
+            <input type="text" required><br>
+            <label for="middlename">MiddleName:</label><br>
+            <input type="text"required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="myemail"required><br>
+            <label for="phonenumber">PhoneNumber</label><br>
+            <input type="number"required><br><br><label for="password">pasword</label>
+            <br>
+            <input type="password"required><br><br>
+<input type="submit"value="signup" class="btn">
+        </form>
+    </fieldset>
+</div></div>
+{%endblock%}

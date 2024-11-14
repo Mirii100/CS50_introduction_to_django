@@ -1,0 +1,20 @@
+{% extends 'appRoot.html'%}
+
+{% block title %}
+practise
+{% endblock%}
+
+{% block body %}
+{% crsf_token %}
+<form action="add" method="post">
+    number 1
+<input type="number"name="num1">
+<br>
+number2
+<br>
+<input type="number"name="num2">
+<input type="submit" value="submit">
+</form>
+
+{{res}}
+{% endblock%}

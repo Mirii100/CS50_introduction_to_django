@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('mine/',include("mine.urls")),
      path('newyear/',include("newyear.urls")),
+     path('my/',include("my.urls")),
 ]

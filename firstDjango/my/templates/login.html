@@ -1,0 +1,27 @@
+{% extends 'appRoot.html'%}
+{% load static %}
+
+{% block title %}
+login page
+
+{% endblock %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'styles/style.css'%}">
+<fieldset>
+    <h1>LOGIN</h1>
+    <form action="">
+        <label for="firstname">FirstName:</label><br>
+        <input type="text"required><br>
+        
+        <label for="email"required>Email:</label><br>
+        <input type="email" name="email" id="myemail"required><br>
+        <br><label for="password">pasword</label>
+        <br>
+        <input type="password" required><br>
+        <br>
+<input type="submit"value="LOGIN"class="btn">
+    </form>
+</fieldset>
+
+{% endblock %}

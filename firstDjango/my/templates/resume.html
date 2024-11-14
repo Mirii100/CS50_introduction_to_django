@@ -1,0 +1,91 @@
+{% extends 'appRoot.html' %}
+{% load static %}
+{% block title %}
+my resume 
+{% endblock%}
+{%block body %}
+<section id="hero" class="hero section dark-background">
+    <img src="{% static 'assets/img/hero2.jpg'%}" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>ALEX NJUGUNA </h2>
+        <p>IM PRACTISING TO BE A FULL STACK DEVELOPER AND USE DJANGO IN THE BACKEND </p>
+        <a href="{% url 'portfolio'%}" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
+      </div>
+</section>
+<section id="resume" class="resume section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <span class="description-title">Muy Resume</span>
+      <h2>My Resume</h2>
+      <p>i started my schoolin few years after i was born and education journey has been continuing  well due to God's grace </p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="resume-title">Sumary</h3>
+
+          <div class="resume-item pb-0">
+            <h4>my summary is as follows </em></p>
+            <ul>
+              <li>county :meru</li>
+              <li>+254707143297</li>
+              <li>njugunaalekii99@gmail.com</li>
+            </ul>
+          </div><!-- Edn Resume Item -->
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Master of computer science  &amp; phsychology</h4>
+            <h5>2022</h5>
+            <p><em>Meru university of science and technology Y</em></p>
+            <p>my bachelors degree </p>
+          </div><!-- Edn Resume Item -->
+
+          <div class="resume-item">
+            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
+            <h5>2010 - 2014</h5>
+            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+          </div><!-- Edn Resume Item -->
+
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+           
+            <h5>2024 - Present</h5>
+            <p><em>2022 </em></p>
+            <ul>
+              <li>i have gathered experience for the past few years </li>
+              <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+            </ul>
+          </div><!-- Edn Resume Item -->
+
+          <div class="resume-item">
+            <h4>Graphic design specialist</h4>
+            <h5>2017 - 2018</h5>
+            <p><em></em></p>
+            <ul>
+              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+              <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+              <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+            </ul>
+          </div><!-- Edn Resume Item -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+{% endblock%}
