@@ -1,8 +1,17 @@
-{% extends 'appRoot.html' %}
 
-{% block title %} Navigation page {% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles/style.css'%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+</head>
+<body>
+    
+ 
 
-{% block body %}
 
 <nav>
     <a href="{% url 'login'%}">homepage</a>
@@ -17,17 +26,19 @@
         <h1>SIGN UP</h1>
         <form action="">
             <label for="firstname">FirstName:</label><br>
-            <input type="text" required><br>
+            <input type="text"name="firstName" required><br>
             <label for="middlename">MiddleName:</label><br>
-            <input type="text"required><br>
+            <input type="text"name="middleName" required><br>
             <label for="email">Email:</label><br>
             <input type="email" name="email" id="myemail"required><br>
             <label for="phonenumber">PhoneNumber</label><br>
-            <input type="number"required><br><br><label for="password">pasword</label>
+            <input type="number"name="PhoneNumber"required><br><br><label for="password">pasword</label>
             <br>
-            <input type="password"required><br><br>
+            <input type="password" name="password"required><br><br>
 <input type="submit"value="signup" class="btn">
         </form>
     </fieldset>
 </div></div>
-{%endblock%}
+
+</body>
+</html>
